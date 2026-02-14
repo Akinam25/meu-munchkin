@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Munchkin Digital Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h2>Munchkin v1.0 ⚔️</h2>
+        
+        <div class="stats-grid">
+            <div class="stat-box">👤 Nível: <b id="ui-nivel">1</b></div>
+            <div class="stat-box">⚔️ Força: <b id="ui-forca">1</b></div>
+        </div>
+        
+        <div class="card-display" id="display">A masmorra está silenciosa...</div>
+
+        <div class="btn-group">
+            <button class="primary" onclick="game.abrirPorta()">Explorar Masmorra</button>
+	<button id="btn-porta" class="primary" onclick="game.abrirPorta()">Explorar Masmorra</button>
+    	<button id="btn-ajuda" class="secondary" onclick="game.pedirAjuda()" disabled>Pedir Ajuda (+3)</button>
+        </div>
+
+        <div class="inventory-section">
+            <strong>🎒 Minha Mochila:</strong>
+            <ul id="lista-inventario">
+                <li>(Vazia)</li>
+            </ul>
+        </div>
+
+        <div id="terminal"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
